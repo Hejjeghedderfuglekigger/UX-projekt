@@ -7,10 +7,13 @@ console.log('file: js/js.js loaded');
 // A $( document ).ready() block.
 $(document).ready(function () { // kører så snart DOM er klar
 
-	console.log("jQuery 3.5.1 running.");
+    console.log("jQuery 3.5.1 running.");
 
-	// ... din kode herfra ...
+    // ... din kode herfra ...
 
-	// ... din kode slut ...
+   
+    
+
+    // ... din kode slut ...
 
 }); // denne line må ikke slettes

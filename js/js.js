@@ -11,8 +11,21 @@ $(document).ready(function () { // kører så snart DOM er klar
 
     // ... din kode herfra ...
 
+
+
+  //her tilføjes mit kort, men den styling jeg har lavet 
+    mapboxgl.accessToken = 'pk.eyJ1IjoicGV3cGV3YmlyZCIsImEiOiJja2dhdGJ5NXEwYThyMnhvNGthYWYwc3l3In0.5drls2ZBSctCfaWg7Odv2g';
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/pewpewbird/ckgaqkssb1hep19quqsxcot48/draft', // style URL
+        center: [10.789, 56.189], // starting position [lng, lat]
+        zoom: 6, // starting zoom
+        pitch: 50,
+    });
+
+
+
    
-    
 
     // ... din kode slut ...
 

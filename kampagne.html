@@ -10,7 +10,9 @@
     <meta name="description" content="" />
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/kampagne.css" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/e8c6a63541de0a4211a9358cbe74690f?family=Futura" rel="stylesheet" type="text/css"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="//db.onlinewebfonts.com/c/e8c6a63541de0a4211a9358cbe74690f?family=Futura" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -37,27 +39,20 @@
 
 
             <section>
-                <p>Dine samlede skridt</p>
-                <img src="" alt="">
-
-                <p>Holdets samlede skridt</p>
-                <img src="" alt="">
-
-                <p>Gennemførte dage</p>
-                <img src="" alt="">
+              <img src="img/statestik.svg" alt="statestik">
             </section>
 
             <section>
-                <p>gamification</p>
+                <p>Mangler du en god vandrerute nær dig?
+                    <br>
+                    Indtast din by og se hvor du kan gå dine daglige skridt</p>
             </section>
 
 
-        <section>
-           <p>Mangler du en god vandrerute nær dig?
-           <br>
-           Indtast din by og se hvor du kan gå dine daglige skridt</p>
-            <p>API</p>
-        </section>
+            <section>
+                <button id="fly">Tryk og find Ebeltoft</button>
+                <div id="map"></div>
+            </section>
 
         </artciel>
 

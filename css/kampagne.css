@@ -1,6 +1,46 @@
-
 body {
-	font-family: 'futura';
+  font-family: "futura medium";
+  font-size: 18px;
+}
+
+H1,
+h2,
+h3,
+h4,
+p {
+  color: #7ac2b1;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#skridt-indtastning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+button {
+  background-color: #7ac2b1;
+}
+
+#find {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Header
@@ -8,16 +48,21 @@ body {
 #header {
 }
 
-
 /* Middle
 -----------------------------------------------------------------------------*/
-#map{
-    width: 800px;
-    height: 400px;
+#wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+#content {
+  justify-content: center;
+  display: flex;
 }
 
-
-
+#map {
+  width: 800px;
+  height: 400px;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/

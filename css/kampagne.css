@@ -9,6 +9,7 @@ h3,
 h4,
 p {
   color: #7ac2b1;
+  margin-bottom: 2%;
 }
 
 h1 {
@@ -35,6 +36,36 @@ p {
 }
 button {
   background-color: #7ac2b1;
+  border: 0;
+  width: 30%;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+#kalender {
+  width: 800px;
+  height: 250px;
+  border: solid 1px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#gå-grafik {
+  width: 800px;
+  height: 250px;
+  border: solid 1px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#kalender-omraade {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #find {
@@ -62,6 +93,7 @@ button {
 #map {
   width: 800px;
   height: 400px;
+  margin-bottom: 2%;
 }
 
 /* Footer

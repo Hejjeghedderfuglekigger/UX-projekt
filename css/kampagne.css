@@ -1,102 +1,104 @@
 body {
-  font-family: "futura medium";
-  font-size: 18px;
+    font-family: "futura medium";
+    font-size: 18px;
 }
 
 H1,
 h2,
 h3,
-h4,
-p {
-  color: #7ac2b1;
-  margin-bottom: 2%;
+h4 {
+    color: #7ac2b1;
+    margin-bottom: 2%;
 }
 
 h1 {
-  font-size: 2.5em;
-  text-align: center;
+    font-size: 2.5em;
+    text-align: center;
 }
+
 h2 {
-  font-size: 2em;
-  text-align: center;
+    font-size: 2em;
+    text-align: center;
 }
+
 h3 {
-  font-size: 1.2em;
-  text-align: center;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 #skridt-indtastning {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p {
-  text-align: center;
+    text-align: center;
+    margin-bottom: 2%;
 }
+
 button {
-  background-color: #7ac2b1;
-  border: 0;
-  width: 30%;
-  font-size: 1em;
-  margin: 0 auto;
-  margin-bottom: 2%;
+    background-color: #7ac2b1;
+    border: 0;
+    width: 30%;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 #kalender {
-  width: 800px;
-  height: 250px;
-  border: solid 1px;
-  background-color: aquamarine;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 2%;
+    width: 800px;
+    height: 250px;
+    border: solid 1px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
-#gå-grafik {
-  width: 800px;
-  height: 250px;
-  border: solid 1px;
-  background-color: aquamarine;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 2%;
+#gaa-grafik {
+    width: 800px;
+    height: 250px;
+    border: solid 1px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 #kalender-omraade {
-  margin-top: 5%;
-  margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #find {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Header
 -----------------------------------------------------------------------------*/
-#header {
-}
+#header {}
 
 /* Middle
 -----------------------------------------------------------------------------*/
 #wrapper {
-  margin: 0 auto;
-  width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
 }
+
 #content {
-  justify-content: center;
-  display: flex;
+    justify-content: center;
+    display: flex;
 }
 
 #map {
-  width: 800px;
-  height: 400px;
-  margin-bottom: 2%;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 2%;
 }
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer {
-}
+#footer {}

@@ -1,46 +1,227 @@
 body {
     font-family: 'futura medium';
+    font-size: 18px;
 }
 
 /* Header
 -----------------------------------------------------------------------------*/
-#header {}
+#header {
+}
+
+#header img {
+    width: 150px;
+    margin: 1em 0 0 1em;
+}
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
+#content {
+}
+
+p {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.startEndHeading {
+    font-size: 4em;
+    color: #7AC2B1;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+#thumbUp {
+    width: 20%;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0 0 1em 0;
+}
+
+label, input {
+    font-size: 1.5em;
+}
+
+input {
+    margin-bottom: 2em;
+    border: solid 2px #7AC2B1;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+#captajnImg {
+    width: 350px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+
+.mailKodeFlex {
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-left: -100px;
+}
+
+.mailKodeFlex input {
+    margin: 0;
+}
+
+#lockImg, #atImg {
+    width: 80px;
+    margin-right: 20px;
+}
+
+button {
+    font-size: 2em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    border: solid 2px #7AC2B1;
+    border-radius: 10px;
+    background-color: #7AC2B1;
+    box-shadow: 6px 6px 5px gray;
+    width: 50%;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:active {
+    transform: translate(6px, 6px);
+    box-shadow: none;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown p {
+    margin: 0.5em 0;
+}
+
+.dropbtn {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px #7AC2B1;
+    width: 50%;
+    cursor: pointer;
+    padding: 0 1em;
+}
+
+.dropdown #dropArrow {
+    margin-left: 4em;
+}
+
+.dropdown-content {
+    display: none;
+    border: solid 2px #7AC2B1;
+    box-sizing: border-box;
+    width: 50%;
+    align-self: center;
+    padding: 0.5em 1em;
+}
+
+.dropdown-content a {
+    font-size: 2em;
+    color: black;
+    
+}
+
+.show {
+    display: block;
+}
+
+.teamImg {
+    width: 200px;
+}
+
+.teamInfo {
+    justify-content: center;
+    margin-left: -220px;
+}
+
+.teamInfo img {
+    margin-right: 20px;
+}
+
+#captajnPortrait {
+    width: 200px;
+}
+
+#plusImg {
+    width: 80px;
+}
+
+#plusImg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#dollarImg {
+    width: 100px;
+    margin: -2em 0 2em 0;
+}
+
+#clapAniGif {
+    width: 300px;
+}
 
 .section {
     text-align: center;
+    padding: 1em;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
 
+/* ---Styling for navigationen på formularen--- */
 /* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
     padding: 16px;
-    color: gray;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    margin-right: 30px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+.prev {
+    margin-left: 30px;
+}
+
+.prev p, .next p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.next .flex {
+    justify-content: flex-end;
+}
+
+.prev img, .next img {
+    max-width: 150px;
+}
+
+.prev:hover {
+    margin-left: 0;
+}
+
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-right: 0;
 }
 
 .dot {
@@ -48,18 +229,25 @@ body {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    border: solid 2px #E43E4C;
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
+    display: inline-block;
 }
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: #E43E4C;
 }
-
+/* ---Slutning af styling på navigationen--- */
 
 /* Footer
 -----------------------------------------------------------------------------*/
-#footer {}
+#footer {
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

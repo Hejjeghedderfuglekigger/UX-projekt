@@ -1,6 +1,6 @@
 /*
- * fil: form.js
- * purpose: jquery til form.html
+ * fil: js.js
+ * purpose: introdction to jQuery
  */
 console.log('file: js/js.js loaded');
 
@@ -10,10 +10,22 @@ $(document).ready(function () { // kører så snart DOM er klar
     console.log("jQuery 3.5.1 running.");
 
     // ... din kode herfra ...
+    
+    //For "placeholder" teksten til at forsvinde når input feltet er i focus
+    $('input').focus(function(){
+        $(this).attr('placeholder', '')
+    });
+    
+    //Drop down function
+    function dropDownFunction(n) {
+        n.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+    }
+    
+    $('.dropbtn').click(function(){dropDownFunction(this)});
+    
 
     //Her gør vi det muligt at gå til næste skridt i formularen, ved hjælp af frem og tilbage pile, samt interaktive prikker
-
-
+    
     var slides = document.getElementsByClassName("section");
     var dots = document.getElementsByClassName("dot");
     var slideIndex = 1;
@@ -25,11 +37,11 @@ $(document).ready(function () { // kører så snart DOM er klar
 
     function currentSlide(n) {
         showSlides(slideIndex = n);
+        //console.log("clicked dot");
     }
 
     function showSlides(n) {
         var i;
-
         if (n > slides.length) {
             slideIndex = slides.length;
         }
@@ -45,43 +57,17 @@ $(document).ready(function () { // kører så snart DOM er klar
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
-
-    $('.dot1').click(function () {
-        currentSlide(1)
-    });
-    $('.dot2').click(function () {
-        currentSlide(2)
-    });
-    $('.dot3').click(function () {
-        currentSlide(3)
-    });
-    $('.dot4').click(function () {
-        currentSlide(4)
-    });
-    $('.dot5').click(function () {
-        currentSlide(5)
-    });
-    $('.dot6').click(function () {
-        currentSlide(6)
-    });
-    $('.dot7').click(function () {
-        currentSlide(7)
-    });
     
-
-    //Her tilføjes vores kort på kampagne siden, men den styling vi har lavet 
-    mapboxgl.accessToken = 'pk.eyJ1IjoicGV3cGV3YmlyZCIsImEiOiJja2dhdGJ5NXEwYThyMnhvNGthYWYwc3l3In0.5drls2ZBSctCfaWg7Odv2g';
-    var map = new mapboxgl.Map({
-        container: 'map', // container id
-        style: 'mapbox://styles/pewpewbird/ckgaqkssb1hep19quqsxcot48/draft', // style URL
-        center: [10.789, 56.189], // starting position [lng, lat]
-        zoom: 6, // starting zoom
-        pitch: 50,
-    });
-
-
-
-
+    $('.dot1').click(function(){currentSlide(1)});
+    $('.dot2').click(function(){currentSlide(2)});
+    $('.dot3').click(function(){currentSlide(3)});
+    $('.dot4').click(function(){currentSlide(4)});
+    $('.dot5').click(function(){currentSlide(5)});
+    $('.dot6').click(function(){currentSlide(6)});
+    $('.dot7').click(function(){currentSlide(7)});
+    
+    $('.prev').click(function() {plusSlides(-1)});
+    $('.next').click(function() {plusSlides(1)});
 
     // ... din kode slut ...
 

@@ -15,155 +15,153 @@
 </head>
 
 <body>
-    
+
 
     <header id="header">
         <img src="img/logo.png" alt="Tæl Skridt">
     </header><!-- .header-->
-<div id="wrapper"> 
-    <main id="content">
+    <div id="wrapper">
+        <main id="content">
 
-        <form action="#" id="reg_form">
+            <form action="#" id="reg_form">
 
-            <section class="section text_align">
-                <img id="thumbUp" src="img/handlike.png" alt="tommelfinger op">
-                <p class="startEndHeading">10.000 skridt om dagen</p>
-                <p> mod en sundere og sjovere hverdag</p>
-            </section>
-
-
-            <section class="section">
-                <h2>Dine oplysninger</h2>
-                <label for="fname">Fornavn</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Mette"><br>
-                <label for="lname">Efternavn</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Jensen">
-
-                <img id="captajnImg" src="img/holdkaptajn.png" alt="#">
-            </section>
+                <section class="section text_align">
+                    <img id="thumbUp" src="img/handlike.png" alt="tommelfinger op">
+                    <p class="startEndHeading">10.000 skridt om dagen</p>
+                    <p> - mod en sundere og sjovere hverdag!</p>
+                </section>
 
 
-            <section class="section">
-                <h2>Dine oplysninger</h2>
-                <div class="flex mailKodeFlex">
-                    <img id="atImg" src="img/snabela.png" alt="">
-                    <div>
-                        <label for="fname">E-mail</label><br>
-                        <input type="text" id="mail" name="mail" placeholder="mette@firmamail.dk">
+                <section class="section">
+                    <h2>Dine oplysninger</h2>
+                    <label for="fname">Fornavn</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Mette"><br>
+                    <label for="lname">Efternavn</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Jensen">
+
+                    <img id="captajnImg" src="img/holdkaptajn.png" alt="#">
+                </section>
+
+
+                <section class="section">
+                    <h2>Dine oplysninger</h2>
+                    <div class="flex mailKodeFlex">
+                        <img id="atImg" src="img/snabela.png" alt="">
+                        <div>
+                            <label for="fname">E-mail</label><br>
+                            <input type="text" id="mail" name="mail" placeholder="mette@firmamail.dk">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="flex mailKodeFlex">
+                        <img id="lockImg" src="img/lock.png" alt="">
+                        <div>
+                            <label for="kode">Opret kode</label><br>
+                            <input type="text" id="kode" name="kode" placeholder="mette1965">
+                        </div>
+                    </div>
+                    <br>
+                    <label for="kode">Gentag kode</label><br>
+                    <input type="text" id="kode" name="kode" placeholder="mette1965">
+                </section>
+
+
+                <section class="section">
+                    <h2>Dit hold</h2>
+                    <button type="button" id="tilmeld_nyt_hold"> Tilmeld nyt hold</button>
+                    <br>
+                    <div class="dropdown">
+                        <div class="dropbtn">
+                            <p>Find dit tidligere hold</p>
+                            <p id="dropArrow">&or;</p>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Mettes Firmahold</a>
+                        </div>
+                    </div>
+                    <img id="team1" class="teamImg" src="img/hold3.png" alt="">
+                </section>
+
+                <section class="section">
+                    <h2>Dit hold</h2>
+                    <div class="flex teamInfo">
+                        <img id="captajnPortrait" src="img/portaitCaptajn.png" alt="">
+                        <div>
+                            <label for="hold_kaptajn">Holdkaptajn</label>
+                            <br>
+                            <input type="text" id="hold_kaptajn" name="hold_kaptajn" value="Mette">
+                            <br>
+                            <label for="hold_navn">Holdnavn</label><br>
+                            <input type="text" id="hold_navn" name="hold_navn" placeholder="Mettes Firmahold">
+                        </div>
+                    </div>
+                    <br>
+
+                    <p>Tilføj dine holdkammerater</p>
+                    <div class="flex teamInfo">
+                        <img id="team2" class="teamImg" src="img/hold3.png" alt="">
+                        <div>
+                            <label for="Fornavn">Navn</label><br>
+                            <input type="text" id="kode" name="kode" placeholder="Jens">
+                            <br>
+                            <label for="kode">E-mail</label><br>
+                            <input type="text" id="kode" name="kode" placeholder="jens@gmail.com">
+                        </div>
+                    </div>
+                    <img id="plusImg" src="img/Plus-sign.svg" alt="">
+                </section>
+
+                <section class="section">
+
+                    <h2>Betaling</h2>
+                    <img id="dollarImg" src="img/betaling.png" alt=""> <br>
+                    <button type="button" id="betal">Betal med VirkID</button>
+                    <br>
+                    <button type="button" id="betal_senere">Betal senere</button>
+                </section>
+
+                <section class="section text_align">
+                    <img id="clapAniGif" src="img/handsclap.gif" alt="">
+                    <p class="startEndHeading">Tillykke!</p>
+                    <p> Dit hold er nu tilmeldt <br> Vi sender en faktura til din e-mail</p>
+                    <a href="kampagne.html"><button type="button">Gå til din side</button></a>
+                </section>
+            </form>
+        </main><!-- .content -->
+
+
+        <footer id="footer">
+            <nav>
+                <div class="prev">
+                    <div class="flex">
+                        <img src="img/tilbagefod.png" alt="#">
+                        <p>Et skridt tilbage</p>
                     </div>
                 </div>
-                <br>
-                <div class="flex mailKodeFlex">
-                    <img id="lockImg" src="img/lock.png" alt="">
-                    <div>
-                        <label for="kode">Kode</label><br>
-                        <input type="text" id="kode" name="kode" placeholder="mette1965">
+
+                <div>
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                    <div class="dot dot5"></div>
+                    <div class="dot dot6"></div>
+                    <div class="dot dot7"></div>
+                </div>
+
+                <div class="next">
+                    <div class="flex">
+                        <p>Næste skridt</p>
+                        <img src="img/fremfod.png" alt="#">
                     </div>
                 </div>
-                <br>
-                <label for="kode">Gentag kode</label><br>
-                <input type="text" id="kode" name="kode" placeholder="mette1965">
-            </section>
+            </nav>
+        </footer><!-- .footer -->
 
+        <!-- load jQuery library -->
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 
-            <section class="section">
-                <h2>Dit hold</h2>
-                <button type="button" id="tilmeld_nyt_hold"> Tilmeld nyt hold</button>
-                <br>
-                <div class="dropdown">
-                    <div class="dropbtn">
-                        <p>Find dit tidligere hold</p>
-                        <p id="dropArrow">&or;</p>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="#">Mettes Firmahold</a>
-                    </div>
-                </div>
-                <img  id="team1" class="teamImg" src="img/hold3.png" alt="">
-            </section>
-
-            <section class="section">
-                <h2>Dit hold</h2>
-                <div class="flex teamInfo">
-                    <img id="captajnPortrait" src="img/portaitCaptajn.png" alt="">
-                    <div>
-                        <label for="hold_kaptajn">Holdkaptajn</label>
-                        <br>
-                        <input type="text" id="hold_kaptajn" name="hold_kaptajn" value="Mette">
-                        <br>
-                        <label for="hold_navn">Holdnavn</label><br>
-                        <input type="text" id="hold_navn" name="hold_navn" placeholder="Mettes Firmahold">
-                    </div>
-                </div>
-                <br>
-
-                <p>Tilføj dine holdkammerater</p>
-                <div class="flex teamInfo">
-                    <img  id="team2" class="teamImg" src="img/hold3.png" alt="">
-                    <div>
-                        <label for="Fornavn">Navn</label><br>
-                        <input type="text" id="kode" name="kode" placeholder="Jens">
-                        <br>
-                        <label for="kode">E-mail</label><br>
-                        <input type="text" id="kode" name="kode" placeholder="jens@gmail.com">
-                    </div>
-                </div>
-                <img id="plusImg" src="img/Plus-sign.svg" alt="">
-            </section>
-
-            <section class="section">
-                
-                <h2>Betaling</h2>
-                <img id="dollarImg" src="img/betaling.png" alt=""> <br>
-                <button type="button" id="betal">Betal med VirkID</button>
-                <br>
-                <button type="button" id="betal_senere">Betal senere</button>
-            </section>
-
-            <section class="section text_align" >
-                <img id="clapAniGif" src="img/handsclap.gif" alt="">
-                <p class="startEndHeading">Tillykke!</p>
-                <p> Dit hold er nu tilmeldt <br> Vi sender en faktura til din e-mail</p>
-                <button type="button">Gå til din side</button>
-            </section>
-        </form>
-    </main><!-- .content -->
-    
-
-    <footer id="footer">
-        <nav>
-            <div class="prev">
-                <div class="flex">
-                    <img src="img/tilbagefod.png" alt="#">
-                    <p>Et skridt tilbage</p>
-                </div>
-            </div>
-
-            <div>
-                <div class="dot dot1"></div>
-                <div class="dot dot2"></div>
-                <div class="dot dot3"></div>
-                <div class="dot dot4"></div>
-                <div class="dot dot5"></div>
-                <div class="dot dot6"></div>
-                <div class="dot dot7"></div>
-            </div>
-
-            <div class="next">
-                <div class="flex">
-                    <p>Næste skridt</p>
-                    <img src="img/fremfod.png" alt="#">
-                </div>
-            </div>
-        </nav>
-    </footer><!-- .footer -->
-
-    <!-- load jQuery library -->
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-
-    <!-- load JavaScript -->
-    <script src="js/form.js"></script>
-</div>
-</body>
-
-</html>
+        <!-- load JavaScript -->
+        <script src="js/form.js"></script>
+    </div>
+</body></html>

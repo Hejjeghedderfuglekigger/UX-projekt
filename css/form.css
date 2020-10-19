@@ -5,7 +5,7 @@ body {
 
 /* Header
 -----------------------------------------------------------------------------*/
-#wrapper{
+#wrapper {
     width: 1200px;
     margin: 0 auto;
 }
@@ -48,12 +48,10 @@ h2 {
 input {
     font-size: 1.5em;
     width: 500px;
-    
+
 }
 
-label{
-    
-}
+label {}
 
 input {
     margin-bottom: 2em;
@@ -154,12 +152,12 @@ button:active {
     width: 200px;
 }
 
-#team1{
+#team1 {
     display: block;
     margin: 0 auto;
 }
 
-#team2{
+#team2 {
     align-self: flex-start;
 }
 
@@ -173,13 +171,12 @@ button:active {
 }
 
 
-
 #captajnPortrait {
     width: 200px;
 }
 
 #plusImg {
-    width: 80px;
+    width: 40px;
 }
 
 #plusImg:hover {
@@ -195,18 +192,18 @@ button:active {
 }
 
 #clapAniGif {
-    width: 300px;
+    width: 350px;
 }
 
 .section {
     padding: 1em;
 }
 
-.text_align{
+.text_align {
     text-align: center;
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
 }

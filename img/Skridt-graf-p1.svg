@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 542" style="enable-background:new 0 0 1024 542;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{fill:none;stroke:#7AC2B1;stroke-width:8;stroke-miterlimit:10;}
+	.st2{fill:#E43E4C;stroke:#E43E4C;stroke-width:8;stroke-miterlimit:10;}
+	.st3{font-family:'Futura';}
+	.st4{font-size:20px;}
+	.st5{font-size:26px;}
+	.st6{display:none;fill:#E43E4C;stroke:#E43E4C;stroke-width:7.8262;stroke-miterlimit:10;}
+	.st7{display:inline;}
+	.st8{display:none;fill:none;stroke:#7AC2B1;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="Lag_1" class="st0">
+	
+		<image style="display:inline;overflow:visible;" width="959" height="476" xlink:href="38F59177.jpg"  transform="matrix(1.0417 0 0 1.084 12 15)">
+	</image>
+</g>
+<g id="Lag_2">
+	<polyline class="st1" points="102,66 102,456 995,456 	"/>
+	<polygon class="st2" points="110,192 175,265 239,287 303,120 366,237 429,309 494,159 557,225 621,200 621,448 110,448 	"/>
+	<text transform="matrix(1 0 0 1 32 421)" class="st3 st4">2.000</text>
+	<text transform="matrix(1 0 0 1 33.333 377.3701)" class="st3 st4">4.000</text>
+	<text transform="matrix(1 0 0 1 34.333 335.3701)" class="st3 st4">6.000</text>
+	<text transform="matrix(1 0 0 1 35.333 292.3701)" class="st3 st4">8.000</text>
+	<text transform="matrix(1 0 0 1 27.333 250.3701)" class="st3 st4">10.000</text>
+	<text transform="matrix(1 0 0 1 29.1333 208.3701)" class="st3 st4">12.000</text>
+	<text transform="matrix(1 0 0 1 29.1333 164.3701)" class="st3 st4">14.000</text>
+	<text transform="matrix(1 0 0 1 29.1333 121.3701)" class="st3 st4">16.000</text>
+	<text transform="matrix(1 0 0 1 29.1333 79.3701)" class="st3 st4">18.000</text>
+	<text transform="matrix(1 0 0 1 22 48)" class="st3 st5">Skridt</text>
+	<text transform="matrix(1 0 0 1 102 483)" class="st3 st4">1</text>
+	<text transform="matrix(1 0 0 1 162.7227 483.3701)" class="st3 st4">2</text>
+	<text transform="matrix(1 0 0 1 231.7227 483.3701)" class="st3 st4">3</text>
+	<text transform="matrix(1 0 0 1 292.8613 483.1851)" class="st3 st4">4</text>
+	<text transform="matrix(1 0 0 1 356.584 483.5552)" class="st3 st4">5</text>
+	<text transform="matrix(1 0 0 1 416.584 483.5552)" class="st3 st4">6</text>
+	<text transform="matrix(1 0 0 1 488.8613 483.1851)" class="st3 st4">7</text>
+	<text transform="matrix(1 0 0 1 554.292 483.0928)" class="st3 st4">8</text>
+	<text transform="matrix(1 0 0 1 623.0146 483.4629)" class="st3 st4">9</text>
+	<text transform="matrix(1 0 0 1 684.0146 483.4629)" class="st3 st4">10</text>
+	<text transform="matrix(1 0 0 1 751.1533 483.2778)" class="st3 st4">11</text>
+	<text transform="matrix(1 0 0 1 816.876 483.6479)" class="st3 st4">12</text>
+	<text transform="matrix(1 0 0 1 874.876 483.6479)" class="st3 st4">13</text>
+	<text transform="matrix(1 0 0 1 941.1533 483.2778)" class="st3 st4">14</text>
+	<text transform="matrix(1 0 0 1 429.4382 522.1311)" class="st3 st5">Kampagne dag</text>
+	<polygon class="st6" points="628,203.5 698,261.9 698,448.5 628,448.5 	"/>
+	<text transform="matrix(1 0 0 1 649 88)" class="st0"><tspan x="0" y="0" class="st7 st3 st4">Dag 10:</tspan><tspan x="0" y="24" class="st7 st3 st4">11650 skridt</tspan></text>
+	<rect x="644" y="66" class="st8" width="120" height="54"/>
+	<line class="st8" x1="702" y1="121" x2="702" y2="261"/>
+</g>
+</svg>

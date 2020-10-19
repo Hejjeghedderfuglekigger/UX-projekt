@@ -1,35 +1,136 @@
 body {
-    font-family: "futura medium";
+    font-family: 'futura';
     font-size: 18px;
 }
 
-H1,
-h2,
-h3,
-h4 {
+/* HEADER START --------------------------------------------------------------*/
+.header {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    background-color: #eaeaea;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    border-right: none;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 1.4em;
+    color: #000000;
+}
+
+.header ul a:hover {
+    color: #afbf67;
+    transition: 0.6s;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 45px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: black;
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: black;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header #logo {
+    width: 160px;
+    padding: 2%;
+    padding-top: 30px;
+}
+
+/* HEADER SLUT --------------------------------------------------------------*/
+
+/* TEXT */
+
+h1,
+h2 {
     color: #7ac2b1;
-    margin-bottom: 2%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
+    margin-top: 30px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: center;
+    padding-bottom: 130px;
+    padding-top: 20px;
 }
 
 h3 {
     font-size: 1.2em;
     text-align: center;
-}
-
-#skridt-indtastning {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 30px; 
 }
 
 p {
@@ -46,29 +147,28 @@ button {
     margin-bottom: 2%;
 }
 
-#kalender {
-    width: 800px;
-    height: 250px;
-    border: solid 1px;
-    background-color: aquamarine;
+#calendar img {
+    display: block;
     margin: 0 auto;
-    text-align: center;
-    margin-bottom: 2%;
 }
 
-#gaa-grafik {
-    width: 800px;
-    height: 250px;
-    border: solid 1px;
-    background-color: aquamarine;
+#stepnumber {
+     display: block;
     margin: 0 auto;
-    text-align: center;
-    margin-bottom: 2%;
+    font-size: 1.6em;
 }
 
-#kalender-omraade {
-    margin-top: 5%;
-    margin-bottom: 5%;
+#gaa-grafik img {
+    width: 800px;
+}
+
+#dag10 {
+    width: 350px;
+    padding-bottom: 50px;
+}
+
+#graf {
+    width: 800px;
 }
 
 #find {
@@ -77,9 +177,9 @@ button {
     justify-content: center;
 }
 
-/* Header
------------------------------------------------------------------------------*/
-#header {}
+#headline {
+    font-size: 2em;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -102,3 +202,58 @@ button {
 /* Footer
 -----------------------------------------------------------------------------*/
 #footer {}
+
+/* MEDIA START ----------------------------------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        height: 115px;
+    }
+
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 43px 30px;
+        font-size: 1.4em;
+    }
+
+    .header ul {
+        background-color: transparent;
+    }
+
+    .header ul a {
+        border-bottom: none;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header ul {
+        background-color: transparent;
+    }
+
+    .header ul a {
+        border-bottom: none;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+/* MEDIA SLUT ---------------------------------------------------------------------*/

@@ -13,62 +13,67 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/kampagne.css" rel="stylesheet" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <link
-      href="//db.onlinewebfonts.com/c/e8c6a63541de0a4211a9358cbe74690f?family=Futura"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="//db.onlinewebfonts.com/c/e8c6a63541de0a4211a9358cbe74690f?family=Futura" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
-    <header id="header"></header>
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Tæl Skridt" id="logo">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">HJEM</a></li>
+            <li><a href="index.html">SHOP</a></li>
+            <li><a href="index.html">SPØRGSMÅL &amp; SVAR</a></li>
+        </ul>
+    </header>
+
     <!-- .header-->
     <div id="wrapper">
-      <main id="content">
-        <article>
-          <h1>Jens</h1>
-          <h2>Jens Firmahold</h2>
+        <main id="content">
+            <article>
+                <h1>METTE</h1>
+                <h2>Dit hold: Mettes Firmahold</h2>
 
-          <section id="skridt-indtastning">
-            <h3>INDTAST</h3>
-            <p>Dine skridt</p>
-            <img src="" alt="" />
-            <button>Indtast skridt her</button>
-            <img src="" alt="" />
-            <!--<p>Sådan, Du har gået ti tusind skridt. (Lav pop-up) </p> -->
-          </section>
+                   <section id="calendar">
+                    <h3 id="headline">INDTAST DINE SKRIDT</h3>
+                        <img src="img/kalender10.png" id="dag10" alt="kalender" />
+                        
+                                      <h3>INDTAST HER:</h3>
+                                        <input type="text" id="stepnumber" name="stepnumber">
+                        <img src="img/Skridt-graf-p1.svg" id="graf" alt="graf" />
+                    <!--<p>Sådan, Du har gået ti tusind skridt. (Lav pop-up) </p> -->
+                
+                </section>
+                
 
-          <section>
-            <img src="img/statistiklille.png" alt="statistik" />
-          </section>
-          <section id="kalender-omraade">
-            <div id="kalender">kalender-grafik</div>
-            <p>
-              godt gået, jeres hold har gået halvtreds tusinde skridt i
-              weekenden.
-            </p>
-          </section>
 
-          <section id="gaa-grafik">Gå-grafik</section>
+                <section id="gaa-grafik">
+                    <img src="img/game10.png" alt="game9" />
+                </section>
 
-          <section>
-            <p>
-              Mangler du en god vandrerute nær dig?
-              <br />
-              Indtast din by og se hvor du kan gå dine daglige skridt
-            </p>
-          </section>
+                <section>
+                    <img src="img/statistiklille.png" alt="statistik" />
+                </section>
 
-          <section id="find">
-            <button id="find-rute">Find Rute</button>
-            <div id="map"></div>
-          </section>
-        </article>
-      </main>
+                <section>
+                    <p>
+                        Mangler du en god vandrerute nær dig?
+                        <br />
+                        Indtast din by og se hvor du kan gå dine daglige skridt
+                    </p>
+                </section>
+
+                <section id="find">
+                    <button id="find-rute">Find Rute</button>
+                    <div id="map"></div>
+                </section>
+            </article>
+        </main>
     </div>
     <!-- .content -->
 
@@ -80,5 +85,4 @@
 
     <!-- load JavaScript -->
     <script src="js/kampagne.js"></script>
-  </body>
-</html>
+</body></html>

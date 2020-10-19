@@ -11,14 +11,24 @@ $(document).ready(function () { // kører så snart DOM er klar
 
     // ... din kode herfra ...
 
+    //Til at fjerne betalings blockeringen
+    $('#payButton').click(function(){
+        $('#blackbox').css('display', 'none');
+    })
+    
+    //Skift billeder til demonstration
+    $('#picChange').click(function(){
+        $('#graphChange').html('<img src="img/Skridt-graf-p2.svg" id="graf" alt="graf" />');
+        $('#gamifyChange').html('<img src="img/game10.png" alt="game9" />'); 
+    })
+    
     //Her tilføjes vores kort på kampagne siden, men den styling vi har lavet 
-    mapboxgl.accessToken = 'pk.eyJ1IjoicGV3cGV3YmlyZCIsImEiOiJja2dhdGJ5NXEwYThyMnhvNGthYWYwc3l3In0.5drls2ZBSctCfaWg7Odv2g';
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmFsZXJpeWFjaGlya292YSIsImEiOiJja2Zxa2gxNXgwc2NuMnhwZnN6d2Q4dW8yIn0.A4_GITwBPZSTG9f9NOCrvQ';
     var map = new mapboxgl.Map({
         container: 'map', // container id
-        style: 'mapbox://styles/pewpewbird/ckgaqkssb1hep19quqsxcot48/draft', // style URL
+        style: 'mapbox://styles/valeriyachirkova/ckggmppog07ha19p31y142kdq', // style URL
         center: [10.789, 56.189], // starting position [lng, lat]
         zoom: 6, // starting zoom
-        pitch: 50,
     });
 
     // ... din kode slut ...

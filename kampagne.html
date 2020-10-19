@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +19,13 @@
 </head>
 
 <body>
+
+    <div id="blackbox">
+        <p>Kære holdkaptajn!</p>
+        <p id="clickHereText">Du er næsten klar til at gå i gang<br> Vi mangler bare din betaling</p>
+        <button id="payButton" type="button">Betal her</button>
+        <p>- og kom godt i gang!</p>
+    </div>
 
     <header class="header">
         <a href="index.html">
@@ -39,37 +47,45 @@
                 <h1>METTE</h1>
                 <h2>Dit hold: Mettes Firmahold</h2>
 
-                   <section id="calendar">
+                <section id="calendar">
                     <h3 id="headline">INDTAST DINE SKRIDT</h3>
-                        <img src="img/kalender10.png" id="dag10" alt="kalender" />
-                        
-                                      <h3>INDTAST HER:</h3>
-                                        <input type="text" id="stepnumber" name="stepnumber">
+                    <img src="img/kalender10.png" id="dag10" alt="kalender" />
+
+                    <h3>INDTAST HER:</h3>
+                    <input type="text" id="stepnumber" name="stepnumber">
+                    <button id="picChange" type="button">Gem</button>
+                    <div id="graphChange">
                         <img src="img/Skridt-graf-p1.svg" id="graf" alt="graf" />
+                    </div>
                     <!--<p>Sådan, Du har gået ti tusind skridt. (Lav pop-up) </p> -->
-                
+
                 </section>
-                
+
 
 
                 <section id="gaa-grafik">
-                    <img src="img/game10.png" alt="game9" />
+                    <p>Hvor godt klarede du det i dag?</p>
+                    <div id="gamifyChange">
+                        <img src="img/game9.png" alt="game9" />
+                    </div>
                 </section>
 
                 <section>
-                    <img src="img/statistiklille.png" alt="statistik" />
+                    <img id="statisticImg" src="img/kampagne-statistik.svg" alt="statistik" />
                 </section>
 
-                <section>
+                <section id="findTekst">
                     <p>
                         Mangler du en god vandrerute nær dig?
-                        <br />
+                    </p>
+                    <p>
                         Indtast din by og se hvor du kan gå dine daglige skridt
                     </p>
                 </section>
-
                 <section id="find">
-                    <button id="find-rute">Find Rute</button>
+                    <h3>INDTAST BY HER:</h3>
+                    <input type="text" id="citySearch" name="citySearch">
+                    <button id="find-rute">Find rute</button>
                     <div id="map"></div>
                 </section>
             </article>
@@ -85,4 +101,6 @@
 
     <!-- load JavaScript -->
     <script src="js/kampagne.js"></script>
-</body></html>
+</body>
+
+</html>
